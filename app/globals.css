@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #FAF5F0;
+  --color-blush: #EBD3C7;
+  --color-text: #1A1614;
+  --color-primary: #1A1614;
+  --color-champagne: #C9A98A;
+  --color-muted: #8C7F78;
+}
+
+* {
+  box-sizing: border-box;
+  border-radius: 0 !important;
+}
+
+html {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FAF5F0;
+  color: #1A1614;
+  font-family: var(--font-jost), sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Vertical Text Utility */
+.writing-vertical-rl {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* Dotted Leader Line for Menu */
+.dotted-leader {
+  flex-grow: 1;
+  border-bottom: 1px dotted #C9A98A;
+  margin: 0 0.75rem 0.35rem 0.75rem;
+  opacity: 0.65;
+}
+
+/* Custom Scrollbar for Luxury Feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF5F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C9A98A;
+}
+
+/* Selection */
+::selection {
+  background-color: #EBD3C7;
+  color: #1A1614;
+}
+
+/* Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
