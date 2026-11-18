@@ -14,7 +14,7 @@ const config: Config = {
         text: "#1A1614",
         primary: "#1A1614",
         champagne: "#C9A98A",
-        muted: "#8C7F78",
+        muted: "#6E625B",
       },
       fontFamily: {
         bodoni: ["var(--font-bodoni)", "serif"],

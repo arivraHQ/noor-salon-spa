@@ -1,7 +1,9 @@
+export type ServiceCategoryKey = 'hair' | 'skin' | 'nails' | 'bridal' | 'spa';
+
 export interface ServiceItem {
   id: string;
   name: string;
-  category: 'hair' | 'skin' | 'nails' | 'bridal' | 'spa';
+  category: ServiceCategoryKey;
   description: string;
   priceFormatted: string;
   priceValue: number;
