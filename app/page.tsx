@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Hero } from "@/components/sections/Hero";
 import { Intro } from "@/components/sections/Intro";
 import { ServicesMenu } from "@/components/sections/ServicesMenu";
+import { SignatureTreatments } from "@/components/sections/SignatureTreatments";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Intro />
       <ServicesMenu />
+      <SignatureTreatments />
     </main>
   );
 }
