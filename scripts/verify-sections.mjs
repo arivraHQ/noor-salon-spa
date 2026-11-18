@@ -21,8 +21,10 @@ async function run() {
     viewport: { width: 1440, height: 900 }
   });
   const desktopPage = await desktopContext.newPage();
-  desktopPage.on('console', msg => {
-    if (msg.type() === 'error') errors.push(`[Desktop Console Error] ${msg.text()}`);
+  desktopPage.on('response', resp => {
+    if (resp.status() >= 400) {
+      errors.push(`[Desktop HTTP ${resp.status()}] ${resp.url()}`);
+    }
   });
   desktopPage.on('pageerror', err => {
     errors.push(`[Desktop Page Error] ${err.message}`);
