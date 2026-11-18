@@ -22,6 +22,13 @@ export const metadata: Metadata = {
   title: "Noor Salon & Spa — Civil Lines, Kanpur",
   description:
     "An unhurried sanctuary for bespoke haircuts, French skin rituals, handcrafted nail architecture, and couture bridal artistry in Kanpur.",
+  icons: {
+    icon: [
+      { url: "/favicon.png", type: "image/png" },
+      { url: "/favicon.ico" },
+    ],
+    apple: "/apple-icon.png",
+  },
   openGraph: {
     title: "Noor Salon & Spa — Civil Lines, Kanpur",
     description: "Beauty, unhurried. Bespoke hair, skin, bridal and spa in Civil Lines, Kanpur.",
