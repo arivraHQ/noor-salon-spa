@@ -3,6 +3,7 @@ import { Hero } from "@/components/sections/Hero";
 import { Intro } from "@/components/sections/Intro";
 import { ServicesMenu } from "@/components/sections/ServicesMenu";
 import { SignatureTreatments } from "@/components/sections/SignatureTreatments";
+import { Bridal } from "@/components/sections/Bridal";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Intro />
       <ServicesMenu />
       <SignatureTreatments />
+      <Bridal />
     </main>
   );
 }
