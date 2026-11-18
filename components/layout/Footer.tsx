@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { siteContent } from "@/content/site";
 
 export function Footer() {
@@ -16,11 +17,22 @@ export function Footer() {
       aria-label="Site Footer"
       className="relative w-full bg-bg border-t-2 border-primary pt-20 pb-12 px-6 sm:px-8 lg:px-12 max-w-7xl mx-auto overflow-hidden"
     >
-      {/* Oversized Editorial Sign-Off in Italic Bodoni Moda */}
+      {/* Oversized Editorial Sign-Off with Studio Emblem Hallmark */}
       <div className="pb-16 sm:pb-24 border-b border-champagne/40 flex flex-col justify-center">
-        <span className="text-xs uppercase tracking-widest font-jost text-muted mb-4 block">
-          ATELIER NOOR • KANPUR
-        </span>
+        <div className="flex items-center space-x-4 mb-6">
+          <div className="relative w-12 h-12 overflow-hidden flex-shrink-0">
+            <Image
+              src="/images/logo-emblem.png"
+              alt="Noor Atelier Seal"
+              width={48}
+              height={48}
+              className="object-contain"
+            />
+          </div>
+          <span className="text-xs uppercase tracking-widest font-jost text-muted block">
+            ATELIER NOOR • KANPUR • EST. 2014
+          </span>
+        </div>
         <h2 className="font-bodoni italic text-6xl sm:text-8xl md:text-9xl text-text font-normal leading-[0.9] tracking-tight">
           {visit.footerSignoff}
         </h2>

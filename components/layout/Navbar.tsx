@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { siteContent } from "@/content/site";
 
 export function Navbar() {
@@ -59,30 +58,18 @@ export function Navbar() {
             ))}
           </nav>
 
-          {/* Centered Wordmark with Brand Logo Emblem */}
+          {/* Centered Pure Typographic Wordmark (Vogue/Editorial Standard) */}
           <div className="flex flex-col items-center justify-center text-center lg:w-1/3">
             <Link
               href="/"
-              className="inline-flex items-center space-x-3 group cursor-pointer focus:outline-none focus:ring-1 focus:ring-champagne"
+              className="inline-flex flex-col items-center group cursor-pointer focus:outline-none focus:ring-1 focus:ring-champagne"
             >
-              <div className="relative w-8 h-8 sm:w-10 sm:h-10 overflow-hidden flex-shrink-0">
-                <Image
-                  src="/images/logo-emblem.png"
-                  alt="Noor Salon & Spa Emblem"
-                  width={40}
-                  height={40}
-                  className="object-contain"
-                  priority
-                />
-              </div>
-              <div className="flex flex-col text-left">
-                <span className="font-bodoni text-2xl sm:text-3xl tracking-[0.16em] text-text font-normal leading-none">
-                  NOOR
-                </span>
-                <span className="text-[8px] tracking-ultra text-muted uppercase font-jost mt-1">
-                  Salon & Spa • Kanpur
-                </span>
-              </div>
+              <span className="font-bodoni text-3xl sm:text-4xl tracking-[0.18em] text-text font-normal">
+                NOOR
+              </span>
+              <span className="text-[9px] tracking-ultra text-muted uppercase font-jost mt-0.5">
+                Salon & Spa • Kanpur
+              </span>
             </Link>
           </div>
 
@@ -151,20 +138,9 @@ export function Navbar() {
         >
           {/* Top Bar inside Overlay */}
           <div className="flex items-center justify-between border-b border-champagne/40 pb-6">
-            <div className="flex items-center space-x-3">
-              <div className="relative w-8 h-8 overflow-hidden flex-shrink-0">
-                <Image
-                  src="/images/logo-emblem.png"
-                  alt="Noor Logo"
-                  width={32}
-                  height={32}
-                  className="object-contain"
-                />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-bodoni text-2xl tracking-[0.2em] text-text leading-none">NOOR</span>
-                <span className="text-[9px] tracking-widest uppercase text-muted mt-1">Kanpur</span>
-              </div>
+            <div className="flex flex-col">
+              <span className="font-bodoni text-2xl tracking-[0.2em] text-text">NOOR</span>
+              <span className="text-[9px] tracking-widest uppercase text-muted">Kanpur</span>
             </div>
             <button
               type="button"
