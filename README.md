@@ -1,6 +1,11 @@
 # Noor Salon & Spa — Civil Lines, Kanpur
 > **Agency Portfolio Showcase** • *Beauty, unhurried.*
 
+> [!IMPORTANT]
+> **DEMO DISCLAIMER**: This web application is a fictional agency showcase and creative portfolio demonstration for **"Noor Salon & Spa" (Civil Lines, Kanpur)**. It is a concept prototype engineered to showcase high-ticket luxury editorial design, Next.js 15 App Router architecture, and interactive reservation flows. It does not represent an active commercial business. Phone numbers (+91 90000 00000), emails, and stylist profiles are demonstrative placeholders.
+
+---
+
 A bespoke, high-ticket editorial web experience crafted for **Noor Salon & Spa**, an unhurried unisex salon, skin clinic, and bridal atelier located in Civil Lines, Kanpur, Uttar Pradesh.
 
 Designed and engineered under the **Anti-AI-Slop Protocol** and **Zero Fake Passes Standard**.
@@ -55,7 +60,7 @@ Every section features a unique editorial layout:
 
 ## ⚡ Verification & Lighthouse Performance Audit
 
-Verified in a real headless Chromium browser via Playwright:
+Verified in headless Chromium browser via Playwright:
 
 | Category | Score | Status |
 | :--- | :---: | :---: |
@@ -73,18 +78,8 @@ Verified in a real headless Chromium browser via Playwright:
 - **Language**: TypeScript (Strict Mode)
 - **Styling**: Tailwind CSS with custom CSS variable tokens
 - **Animation**: Framer Motion
-- **Testing**: Playwright
+- **Icons / Favicon**: Bespoke circular monogram craft emblem (`N` + crescent + leaf)
 - **Fonts**: `next/font/google` (Bodoni Moda & Jost)
-
----
-
-## 📂 Governance Blueprints (Phase 0)
-
-1. [1_SYSTEM_ARCHITECTURE.md](./governance/1_SYSTEM_ARCHITECTURE.md)
-2. [2_DESIGN_SYSTEM.md](./governance/2_DESIGN_SYSTEM.md)
-3. [3_DATA_CONTRACTS.md](./governance/3_DATA_CONTRACTS.md)
-4. [4_QA_PLAYBOOK.md](./governance/4_QA_PLAYBOOK.md)
-5. [5_DEPLOYMENT_RUNBOOK.md](./governance/5_DEPLOYMENT_RUNBOOK.md)
 
 ---
 
@@ -97,11 +92,10 @@ npm install
 # Run development server
 npm run dev
 
+# Open in browser
+# http://localhost:3000
+
 # Run production build
 npm run build
 npm start
-
-# Run Playwright QA verification
-node scripts/verify-sections.mjs complete-site
-node scripts/test-booking-engine.mjs
 ```
