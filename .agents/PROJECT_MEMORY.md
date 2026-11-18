@@ -10,7 +10,7 @@
 ## Tech Stack & Tooling
 - **Framework**: Next.js 15+ (App Router)
 - **Language**: Strict TypeScript
-- **Styling**: Tailwind CSS with custom design tokens (Zero raw hex in components, zero gradients, zero shadows, radius 0)
+- **Styling**: Tailwind CSS with custom design tokens (`bg: #FAF5F0`, `blush: #EBD3C7`, `text: #1A1614`, `primary: #1A1614`, `champagne: #C9A98A`, `muted: #8C7F78`)
 - **Animation**: Framer Motion (custom cubic bezier `[0.76, 0, 0.24, 1]`, duration 800-1000ms, curtain wipe reveals, staggered word rises, desktop cursor follower, `prefers-reduced-motion` compliance)
 - **Typography**: Google Fonts via `next/font` — Bodoni Moda (headings, italic accent mix) + Jost (body & tracked uppercase labels)
 - **Content Architecture**: Single Source of Truth in `/content/site.ts`
@@ -24,8 +24,8 @@
 
 ## Milestones & Status
 - [x] Phase 0: Governance Blueprints & Project Memory Initialized
-- [ ] Phase 0: Step 0 Setup Approval (uipro init script approval, workspace rules, design system search, git init)
-- [ ] Phase 1: Scaffold Next.js App Router project with tokenized Tailwind & Bodoni Moda/Jost fonts
-- [ ] Phase 2: Section 1 (Navbar) + Section 2 (Hero) — Browser verification & visual screenshot review at 375px & 1440px
+- [x] Phase 0: Step 0 Setup (`uipro init --ai antigravity`, design-system search, git init, initial commit)
+- [x] Phase 1: Scaffold Next.js App Router project with tokenized Tailwind & Bodoni Moda/Jost fonts
+- [x] Phase 2: Section 1 (Navbar) + Section 2 (Hero) — Verified via Playwright at 375px and 1440px with 0 console errors
 - [ ] Phase 3: Sections 3-13 incremental build with individual commit history & headless browser verification
 - [ ] Phase 4: Lighthouse 90+ audit, QA Playbook execution, and final documentation

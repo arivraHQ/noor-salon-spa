@@ -117,12 +117,14 @@ export function Hero() {
             className="w-full max-w-sm sm:max-w-md lg:max-w-none"
           >
             <OffsetFrame frameOffset="md" frameDirection="bottom-right">
-              {/* Image slot with blush-toned placeholder block and image brief */}
+              {/* Image slot with editorial photography and image brief */}
               <ImagePlaceholder
+                src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=900&q=80"
                 aspectRatio="aspect-[3/4]"
                 label="HERO PORTRAIT / ATELIER"
                 brief={hero.portraitBrief}
                 alt="Editorial portrait of Indian woman with natural waves representing Noor Salon Kanpur"
+                priority
               />
             </OffsetFrame>
           </motion.div>

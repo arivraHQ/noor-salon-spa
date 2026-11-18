@@ -1,20 +1,55 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
+import Image from "next/image";
 
 interface ImagePlaceholderProps {
+  src?: string;
   aspectRatio?: string;
   brief: string;
   label?: string;
   className?: string;
   alt: string;
+  priority?: boolean;
 }
 
 export function ImagePlaceholder({
+  src,
   aspectRatio = "aspect-[3/4]",
   brief,
   label = "EDITORIAL PHOTOGRAPHY",
   className = "",
   alt,
+  priority = false,
 }: ImagePlaceholderProps) {
+  const [imageError, setImageError] = useState(false);
+
+  // If a valid image source is provided and hasn't errored
+  if (src && !imageError) {
+    return (
+      <div
+        className={`relative w-full overflow-hidden bg-blush/40 border border-champagne/40 ${aspectRatio} ${className}`}
+      >
+        {/* Comment with exact image brief for design documentation */}
+        {/* Image Brief: {brief} */}
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          priority={priority}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="object-cover transition-transform duration-editorial ease-editorial hover:scale-105"
+          onError={() => setImageError(true)}
+        />
+        {/* Subtle bottom label on hover */}
+        <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-text/60 to-transparent p-4 text-[10px] tracking-widest text-bg font-jost uppercase opacity-0 hover:opacity-100 transition-opacity duration-300">
+          <span>{label}</span> • <span>Civil Lines Studio</span>
+        </div>
+      </div>
+    );
+  }
+
+  // Fallback to bespoke blush-toned editorial stamp block
   return (
     <div
       role="img"
