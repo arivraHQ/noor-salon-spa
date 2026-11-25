@@ -142,8 +142,32 @@ export function Footer() {
           © {new Date().getFullYear()} {nap.name}. Established {nap.establishedYear} in Kanpur. All rights reserved.
         </p>
         <p className="text-champagne font-mono">
-          DESIGNED FOR NOOR SALON & SPA • KANPUR
+          DESIGNED FOR NOOR SALON &amp; SPA • KANPUR
         </p>
+      </div>
+
+      {/* Portfolio & Showcase Disclaimer + Arivra Design Labs Attribution */}
+      <div className="mt-8 pt-6 border-t border-champagne/25 text-center space-y-3">
+        <p className="text-[11px] font-jost text-muted max-w-4xl mx-auto leading-relaxed">
+          <strong className="text-text">Notice &amp; Disclaimer:</strong> This website is an interactive concept application engineered solely for portfolio demonstration and showcase purposes. Noor Salon &amp; Spa is a fictional entity. All contact details, telephone numbers, stylist profiles, and service rates are simulated dummy data. Please do not contact these numbers for actual salon appointments or bridal consultations.
+        </p>
+        <div className="inline-flex flex-wrap items-center justify-center gap-2 px-4 py-1.5 rounded-none bg-bg border border-champagne/60 text-xs font-jost text-text">
+          <span className="font-medium tracking-widest uppercase text-[10px] text-primary">
+            ARIVRA Demo
+          </span>
+          <span className="text-champagne">•</span>
+          <span className="text-muted">
+            A product by{" "}
+            <a
+              href="https://arivra.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-text hover:text-primary underline underline-offset-4 transition-colors"
+            >
+              Arivra Design Labs
+            </a>
+          </span>
+        </div>
       </div>
     </footer>
   );

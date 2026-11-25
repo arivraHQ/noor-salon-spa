@@ -36,8 +36,16 @@ next-env.d.ts
 .agents/
 AGENTS.md
 GEMINI.md
+*gemini*.md
+.gemini/
+*.agent*
 governance/
 *token*
 *secret*
 lighthouse-*.json
 scripts/
+.ag-kit-backups/
+graphify-out/
+.codex/
+__pycache__/
+*.pyc

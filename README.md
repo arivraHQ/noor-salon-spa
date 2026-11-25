@@ -99,3 +99,10 @@ npm run dev
 npm run build
 npm start
 ```
+
+---
+
+## 📄 License & Attribution
+
+**ARIVRA Demo** — A product by [Arivra Design Labs](https://arivra.com/).  
+Licensed under the [MIT License](LICENSE).
